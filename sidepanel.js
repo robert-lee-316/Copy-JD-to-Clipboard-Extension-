@@ -50,7 +50,6 @@ async function saveForm() {
 }
 
 function clearFieldsForNewJobLink() {
-  $("platform").value = "Linkedin";
   $("companyName").value = "";
   $("jobTitle").value = "";
   $("method").value = "Apply";
