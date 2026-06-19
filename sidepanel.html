@@ -24,11 +24,11 @@
           <option value="Indeed">Indeed</option>
           <option value="ZipRecruiter">ZipRecruiter</option>
           <option value="Glassdoor">Glassdoor</option>
-          <option value="Wellfound">Wellfound</option>
-          <option value="Greenhouse">Greenhouse</option>
-          <option value="Lever">Lever</option>
-          <option value="Workday">Workday</option>
-          <option value="Company Website">Company Website</option>
+          <option value="SimplyHired">Simply Hired</option>
+          <option value="JobRight">JobRight</option>
+          <option value="Monster">Monster</option>
+          <option value="HiringCafe">HiringCafe</option>
+          <option value="MatchaJobs">MatchaJobs</option>
           <option value="Other">Other</option>
         </select>
       </label>
@@ -44,15 +44,16 @@
       </label>
 
       <label>
-        Job Link
-        <input id="jobLink" type="url" placeholder="https://www.linkedin.com/jobs/..." />
+        Job Link <span class="auto-pill">Auto</span>
+        <div class="auto-link-row">
+          <input id="jobLink" type="url" placeholder="Current tab URL will appear here" readonly />
+        </div>
       </label>
 
       <label>
         Method
         <select id="method">
           <option value="Apply">Apply</option>
-          <option value="Easy Apply">Easy Apply</option>
           <option value="Email">Email</option>
           <option value="Recruiter">Recruiter</option>
           <option value="Referral">Referral</option>
