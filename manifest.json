@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Job Description Clipboard Builder",
+  "version": "1.0.0",
+  "description": "Manually build job description JSON from the Chrome side panel and copy it to clipboard.",
+  "permissions": ["sidePanel", "clipboardWrite", "storage"],
+  "action": {
+    "default_title": "Open JD Clipboard Builder"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JD Clipboard Builder</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <main class="panel">
+    <header class="header">
+      <div>
+        <h1>JD Clipboard Builder</h1>
+        <p>Enter job information, preview JSON, then copy it.</p>
+      </div>
+    </header>
+
+    <section class="form-card">
+      <label>
+        Platform
+        <select id="platform">
+          <option value="Linkedin">Linkedin</option>
+          <option value="Dice">Dice</option>
+          <option value="Indeed">Indeed</option>
+          <option value="ZipRecruiter">ZipRecruiter</option>
+          <option value="Glassdoor">Glassdoor</option>
+          <option value="Wellfound">Wellfound</option>
+          <option value="Greenhouse">Greenhouse</option>
+          <option value="Lever">Lever</option>
+          <option value="Workday">Workday</option>
+          <option value="Company Website">Company Website</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+
+      <label>
+        Company Name
+        <input id="companyName" type="text" placeholder="EITACIES Inc." />
+      </label>
+
+      <label>
+        Job Title
+        <input id="jobTitle" type="text" placeholder="ReactJS Frontend Developer" />
+      </label>
+
+      <label>
+        Job Link
+        <input id="jobLink" type="url" placeholder="https://www.linkedin.com/jobs/..." />
+      </label>
+
+      <label>
+        Method
+        <select id="method">
+          <option value="Apply">Apply</option>
+          <option value="Easy Apply">Easy Apply</option>
+          <option value="Email">Email</option>
+          <option value="Recruiter">Recruiter</option>
+          <option value="Referral">Referral</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+
+      <label>
+        Job Description
+        <textarea id="JD" rows="14" placeholder="Paste the full job description here..."></textarea>
+      </label>
+    </section>
+
+    <section class="actions">
+      <button id="copyBtn" class="primary">Copy JSON</button>
+      <button id="clearBtn" class="secondary">Clear</button>
+    </section>
+
+    <p id="status" class="status" aria-live="polite"></p>
+
+    <section class="preview-card">
+      <div class="preview-header">
+        <h2>Preview</h2>
+        <button id="refreshBtn" class="mini">Refresh</button>
+      </div>
+      <pre id="preview">{}</pre>
+    </section>
+  </main>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
